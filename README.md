@@ -4,14 +4,10 @@ Compiler Workflow that allows for Node Pre-Processors during for WordPress Devel
 
 
 ### Requirements
-
 Node v14.19.3
 
-### Setup
-
-```sh
-$ npm install
-```
+### Optional
+Visual Studio Code (This package ustilizes Live Sass Compiler extension)
 
 ### OVERALL STRUCTURE OF WORDPRESS SET UP:
 
@@ -61,13 +57,15 @@ Search for "Live Sass Compiler" extension
 
 Settings can be applied for User & Workspaces. In this case, apply the below settings to Workspace. Click on the Extensions tab on the left-most column (square grid icon). Click on the cog wheel to the right of the Live Sass Compiler listing.
 
+```
 "liveSassCompile.settings.formats":[
-{
+ {
 "format": "compressed",
 "extensionName": ".css",
 "savePath": "/src"
 }
 ]
+```
 
 - Work Space = Project
 - User = Global/App-wide
