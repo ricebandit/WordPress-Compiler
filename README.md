@@ -61,7 +61,7 @@ CAVEAT! Deleting a file from your src directory will not remove it from the comp
 
 Go to /src/dev-scripts/copy.js, open the file and change the themeName variable to whatever the name of your theme directory.
 
-Any time you're ready to update your biild's files and folders, run the following command:
+Any time you're ready to update your build's files and folders, run the following command:
 ```
 npm run copy
 ```
