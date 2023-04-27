@@ -43,10 +43,10 @@ CAVEAT! Deleting a file from your src directory will not remove it from the comp
 
 1) Create your local directory
 
-This directory will be used to store two directories:
+  This directory will be used to store two directories:
 
-- build
-- this package
+  - build
+  - this package
 
 2) In the build directory, install a fresh WordPress instance. Easiest way is to use MAMP (https://www.mamp.info/en).
 
