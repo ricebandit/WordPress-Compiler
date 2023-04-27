@@ -52,7 +52,7 @@ CAVEAT! Deleting a file from your src directory will not remove it from the comp
 
 4) Once you are able to activate a theme, go into it's directory at /wp-content/themes/yourtheme. You'll want to copy all of the contents (files and directories) and paste them in step 6, below.
 
-5) In the /src/ directory, you'll want to DELETE ALL of the existing files and folders, EXCEPT for dev-scripts. (I just kept these files here so you know where to your theme files belong)
+5) In the /src/ directory, you'll want to DELETE ALL of the existing files and folders, EXCEPT for dev-scripts. (I just kept these files here so you know where your theme files belong)
 
 6) Paste all of your theme files (from step 4) into the /src directory of this package. 
 
