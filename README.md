@@ -41,18 +41,14 @@ CAVEAT! Deleting a file from your src directory will not remove it from the comp
 
 ### PREPARATION
 
-1) Create your local directory
-
-  This directory will be used to store two directories:
+1) Create your local directory. This directory will be used to store two directories:
 
   - build
   - this package
 
 2) In the build directory, install a fresh WordPress instance. Easiest way is to use MAMP (https://www.mamp.info/en).
 
-3) If you already have a theme, activate it.
-
-If not, there are minimalist boilerplate themes you can download, such as _underscores (https://underscores.me/). 
+3) If you already have a theme, activate it. If not, there are minimalist boilerplate themes you can download, such as _underscores (https://underscores.me/). 
 
 4) Once you are able to activate a theme, go into it's directory at /wp-content/themes/yourtheme. You'll want to copy all of the contents (files and directories) and paste them in step 6, below.
 
