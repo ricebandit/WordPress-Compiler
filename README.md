@@ -70,8 +70,8 @@ Settings can be applied for User & Workspaces. In this case, apply the below set
 }
 ]
 
-Work Space = Project
-User = Global/App-wide
+- Work Space = Project
+- User = Global/App-wide
 
 ### SASS Files
 
