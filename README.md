@@ -59,11 +59,11 @@ Settings can be applied for User & Workspaces. In this case, apply the below set
 
 ```
 "liveSassCompile.settings.formats":[
- {
-"format": "compressed",
-"extensionName": ".css",
-"savePath": "/src"
-}
+  {
+    "format": "compressed",
+    "extensionName": ".css",
+    "savePath": "/src"
+  }
 ]
 ```
 
