@@ -1,5 +1,5 @@
 # WordPress-Compiler
-Compiler Workflow that allows for Node Pre-Processors during for WordPress Development
+Compiler Workflow that allows for Node Pre-Processors during WordPress Development
 
 
 
