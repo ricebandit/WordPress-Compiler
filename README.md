@@ -2,7 +2,6 @@
 Compiler Workflow that allows for Node Pre-Processors during for WordPress Development
 
 
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 ### Requirements
 
