@@ -45,8 +45,7 @@ CAVEAT! Deleting a file from your src directory will not remove it from the comp
 ### SOURCE FOLDER
 
 - cd to source directory
-
-src/dev-scripts/copy.js, change themeName
+- src/dev-scripts/copy.js, change themeName
 
 npm run copy
 
