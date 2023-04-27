@@ -15,9 +15,20 @@ $ npm install
 
 ### OVERALL STRUCTURE OF WORDPRESS SET UP:
 
-build - Core WP files - wp-content
+- build
 
-source - .git - .gitignore - package.json - src - Copy of WP Core files - dev-scripts - copy.js - scss
+  - Core WP files
+  - wp-content
+
+- source
+  - .git
+  - .gitignore
+  - package.json
+  - src
+    - Copy of WP Core files
+    - dev-scripts
+      - copy.js
+      - scss
 
 ### OVERALL WORKFLOW
 
