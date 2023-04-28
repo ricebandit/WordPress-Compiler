@@ -1,4 +1,5 @@
 const themeName = 'perfection';
+const rootName = 'build';
 const fs = require('fs');
 const path = require('path');
 
@@ -27,7 +28,7 @@ const copyRecursive = (src, dest) => {
     }
 }
 
-copyRecursive('./src', '../build/wp-content/themes/' + themeName);
+copyRecursive('./src', '../' + rootName + '/wp-content/themes/' + themeName);
 
 
 
