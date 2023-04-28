@@ -44,9 +44,9 @@ CAVEAT! Deleting a file from your src directory will not remove it from the comp
 1) Create your local directory. This directory will be used to store two directories:
 
   - build
+      - By default, this package assumes the name of the WordPress root directory is named "build". If not, you'll need to go to /src/dev-scripts/copy.js, and change the "rootName" variable to the name of that folder.
   - this package
   
-  ** By default, this package assumes the name of the WordPress root directory is named "build". If not, you'll need to go to /src/dev-scripts/copy.js, and change the "rootName" variable to the name of that folder.
 
 2) In the build directory, install a fresh WordPress instance. Easiest way is to use MAMP (https://www.mamp.info/en).
 
