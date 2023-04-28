@@ -78,6 +78,8 @@ Search for "Live Sass Compiler" extension
 
 Settings can be applied for User & Workspaces. In this case, apply the below settings to Workspace. Click on the Extensions tab on the left-most column (square grid icon). Click on the cog wheel to the right of the Live Sass Compiler listing.
 
+Click on "Edit in settings.json" link.
+
 ```
 "liveSassCompile.settings.formats":[
   {
