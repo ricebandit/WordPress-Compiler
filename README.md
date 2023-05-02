@@ -8,7 +8,7 @@ Node v14.19.3
 
 ### Optional
 
-Visual Studio Code (This package ustilizes Live Sass Compiler extension)
+Visual Studio Code (This package utilizes Live Sass Compiler extension)
 
 ### OVERALL STRUCTURE OF WORDPRESS SET UP:
 
@@ -29,13 +29,13 @@ Visual Studio Code (This package ustilizes Live Sass Compiler extension)
 
 ### OVERALL WORKFLOW
 
-All Development should be from the "source" directory, with Visual Studio Code watchinhg for Sass changes. After each save, Live Watch will compile and save style.css in the src directory.
+This set up will allow you to use Node for building WordPress sites.
+
+All Development should be from the "source" directory. I use Visual Studio Code to watch for Sass changes. After each save, Live Watch will compile and save style.css in the src directory.
 
 Additional template files and folders can be added to the src folder and will automatically be added to the list of files to copy over.
 
-When ready to preview, "npm run copy". This will copy all files and directories into build/wp-content/themes/customtheme
-
-This set up will allow you to use Node and migrate WP from local to server without having to move node_modules & git files/folders.
+WHEN READY TO PREVIEW, "npm run copy". This will copy all theme files and directories into build/wp-content/themes/customtheme
 
 CAVEAT! Deleting a file from your src directory will not remove it from the compiled version, so you will need to remove it manually.
 
@@ -56,6 +56,8 @@ CAVEAT! Deleting a file from your src directory will not remove it from the comp
 5. Paste all of your theme files (from step 4) into the /src directory of this package.
 
 The dev-scripts folder should be included along with the rest of your theme files. IT WILL NOT BE INCLUDED IN THE COPY LIST.
+
+6. TO AVOID FUTURE POTENTIAL CONFUSION, I recommend deleting the .git file linking to this repository.
 
 ### SOURCE FOLDER
 
@@ -79,7 +81,7 @@ Search for "Live Sass Compiler" extension
 
 Settings can be applied for User & Workspaces. In this case, apply the below settings to Workspace. Click on the Extensions tab on the left-most column (square grid icon). Click on the cog wheel to the right of the Live Sass Compiler listing.
 
-Click on "Edit in settings.json" link.
+Click on "Edit in settings.json" link, and add the following:
 
 ```
 "liveSassCompile.settings.formats":[
