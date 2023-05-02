@@ -1,12 +1,13 @@
 # WordPress-Compiler
+
 Compiler Workflow that allows for Node Pre-Processors during WordPress Development
 
-
-
 ### Requirements
+
 Node v14.19.3
 
 ### Optional
+
 Visual Studio Code (This package ustilizes Live Sass Compiler extension)
 
 ### OVERALL STRUCTURE OF WORDPRESS SET UP:
@@ -30,40 +31,38 @@ Visual Studio Code (This package ustilizes Live Sass Compiler extension)
 
 All Development should be from the "source" directory, with Visual Studio Code watchinhg for Sass changes. After each save, Live Watch will compile and save style.css in the src directory.
 
-Template files and folders can be added as needed.
+Additional template files and folders can be added to the src folder and will automatically be added to the list of files to copy over.
 
-When ready to preview, npm run copy. This will copy all files and directories into build/wp-content/themes/customtheme
+When ready to preview, "npm run copy". This will copy all files and directories into build/wp-content/themes/customtheme
 
 This set up will allow you to use Node and migrate WP from local to server without having to move node_modules & git files/folders.
 
 CAVEAT! Deleting a file from your src directory will not remove it from the compiled version, so you will need to remove it manually.
 
-
 ### PREPARATION
 
-1) Create your local directory. This directory will be used to store two directories:
+1. Create your local directory. This directory will be used to store two directories:
 
-  - build
-      - By default, this package assumes the name of the WordPress root directory is named "build". If not, you'll need to go to /src/dev-scripts/copy.js, and change the "rootName" variable to the name of that folder.
-  - this package
-  
+- build
+  - By default, this package assumes the name of the WordPress root directory is named "build". If not, you'll need to go to /src/dev-scripts/copy.js, and change the "rootName" variable to the name of that folder.
+- this package
 
-2) In the build directory, install a fresh WordPress instance. Easiest way is to use MAMP (https://www.mamp.info/en).
+2. In the build directory, install a fresh WordPress instance. Easiest way is to use MAMP (https://www.mamp.info/en).
 
-3) If you already have a theme, activate it. If not, there are minimalist boilerplate themes you can download, such as _underscores (https://underscores.me/). 
+3. If you already have a theme, activate it. If not, there are minimalist boilerplate themes you can download, such as \_underscores (https://underscores.me/).
 
-4) Once you are able to activate a theme, go into it's directory at /wp-content/themes/yourtheme. You'll want to copy all of the contents (files and directories) and paste them in step 6, below.
+4. Once you are able to activate a theme, go into it's directory at /wp-content/themes/yourtheme. You'll want to copy all of the contents (files and directories) and paste them in step 6, below.
 
-5) In the /src/ directory, you'll want to DELETE ALL of the existing files and folders, EXCEPT for dev-scripts. (I just kept these files here so you know where your theme files belong)
+5. Paste all of your theme files (from step 4) into the /src directory of this package.
 
-6) Paste all of your theme files (from step 4) into the /src directory of this package. 
-
+The dev-scripts folder should be included along with the rest of your theme files. IT WILL NOT BE INCLUDED IN THE COPY LIST.
 
 ### SOURCE FOLDER
 
 Go to /src/dev-scripts/copy.js, open the file and change the themeName variable to whatever the name of your theme directory.
 
 Any time you're ready to update your build's files and folders, run the following command:
+
 ```
 npm run copy
 ```
